@@ -13,3 +13,6 @@ Definir las siguientes como variables de entorno:
 - MYSQL_DATABASE=causascomunes
 ```
 
+Carpetas que habira que persistir:
+
+- `webroot/img` (ahi es donde se suben las imagenes)
