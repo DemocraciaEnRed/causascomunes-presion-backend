@@ -16,3 +16,7 @@ Definir las siguientes como variables de entorno:
 Carpetas que habira que persistir:
 
 - `webroot/img` (ahi es donde se suben las imagenes)
+
+
+## Bugs detectados
+- En la carga de imágenes a veces tira error con los jpg/jpeg. La solución es convertilas a png y subirla. En linux esto se realiza fácilmente con la utilidad `convert` que viene al instalar `imagemagick` (en Debians `sudo apt install imagemagick`)
