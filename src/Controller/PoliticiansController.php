@@ -46,6 +46,9 @@ class PoliticiansController extends AppController
                 'Parties' => [
                     'fields' => ['name']
                 ],
+                'Positions' => [
+                    'fields' => ['name']
+                ],
                 'Stances',
                 'Stances.Projects' => [
                     'fields' => ['slug']
