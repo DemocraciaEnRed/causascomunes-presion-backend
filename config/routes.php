@@ -140,6 +140,7 @@ Router::scope('/', function (RouteBuilder $routes) {
 Router::scope('/api/v1', function (RouteBuilder $routes) {
     $routes->connect('/projects/tally', ['controller' => 'Projects', 'action' => 'getFullTally']);
     $routes->connect('/districts', ['controller' => 'Districts', 'action' => 'getAll']);
+    $routes->connect('/politicians/testWencha', ['controller' => 'Politicians', 'action' => 'testWencha']);
     $routes->connect('/politicians/*', ['controller' => 'Politicians', 'action' => 'getAll']);
     $routes->connect('/politicians/:slug/cover', ['controller' => 'Politicians', 'action' => 'getAll', true], ['pass' => ['slug']]);
     $routes->connect('/parties', ['controller' => 'Parties', 'action' => 'getAll']);

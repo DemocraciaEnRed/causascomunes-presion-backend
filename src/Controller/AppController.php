@@ -63,7 +63,7 @@ class AppController extends Controller
             'unauthorizedRedirect' => $this->referer()
         ]);
         
-        $this->Auth->allow(['getAll']);
+        $this->Auth->allow(['getAll', 'testWencha']);
 
         $this->set('nav', $this->nav);
 

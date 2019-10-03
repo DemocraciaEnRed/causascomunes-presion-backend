@@ -21,6 +21,12 @@ class PoliticiansController extends AppController
         $this->set(compact('nav'));
     }
 
+    public function testWencha($projectSlug = null, $cover = false)
+    {
+        $this->autoRender = false;
+        echo "<br><br><br>Muchos errores pero acá estoy, 123<br><br><br>";
+    }
+
     public function getAll($projectSlug = null, $cover = false)
     {
         $data = $this->Politicians->find('all', [
