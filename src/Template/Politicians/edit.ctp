@@ -61,6 +61,7 @@
         <?php
             foreach($projects as $project) {
                 $stanceExists = false;
+                // el stanceId define la opción seleccionada, por defecto la seteamos a No Confirmado
                 $stanceId = 0;
                 $stances = [];
                 foreach($project->stances as $stance) {
@@ -77,6 +78,7 @@
                             break;
                         case 3:
                             $value = "No Confirmado";
+                            $stanceId = $stance->id;
                             break;
                     }
                     $stances[$stance->id] = $value;
