@@ -82,7 +82,7 @@ class PoliticiansController extends AppController
                 ]
             ])->where(['Projects.slug' => $projectSlug])->first();
             if(!empty($project)) {
-                if($cover && !empty($project->politicians)) {
+                if(false/*$cover*/ && !empty($project->politicians)) {
                     $data = $project->politicians;
                 }
                 else {
