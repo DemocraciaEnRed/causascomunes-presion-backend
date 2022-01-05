@@ -1,7 +1,7 @@
-LABEL org.opencontainers.image.source https://github.com/DemocraciaEnRed/causascomunes-presion-backend
-
 # Based off of php 7.1.5 example: https://blog.cloud66.com/deploying-your-cakephp-applications-with-cloud-66/
 FROM php:7.3.3-apache
+
+LABEL org.opencontainers.image.source https://github.com/DemocraciaEnRed/causascomunes-presion-backend
 
 # System dependencies
 RUN apt-get update && apt-get install -y libicu-dev libpq-dev mysql-client zip unzip \
